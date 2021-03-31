@@ -5,9 +5,11 @@ module "network" {
   network_name = "test"
   project_id = var.project
   subnets = [
+      {
       subnet_name = "gaurav_subent"
       subnet_ip =  "10.100.10.0/24"
       subnet_region = var.region
+      }
   ]
 
 }
